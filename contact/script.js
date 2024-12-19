@@ -6,6 +6,8 @@ const prevBtnThird = document.querySelector(".prev-2");
 const nextBtnThird = document.querySelector(".next-2");
 const prevBtnFourth = document.querySelector(".prev-3");
 const submitBtn = document.querySelector(".submit");
+const container1 = document.querySelector(".container");
+const container_thanks = document.querySelector(".container_thanks");
 const progressText = document.querySelectorAll(".step p");
 const progressCheck = document.querySelectorAll(".step .check");
 const bullet = document.querySelectorAll(".step .bullet");
@@ -35,11 +37,20 @@ nextBtnThird.addEventListener("click", function(event){
   progressText[current - 1].classList.add("active");
   current += 1;
 });
-submitBtn.addEventListener("click", function(){
-  bullet[current - 1].classList.add("active");
-  progressCheck[current - 1].classList.add("active");
-  progressText[current - 1].classList.add("active");
-  current += 1;s
+submitBtn.addEventListener("click", function(e){
+  e.preventDefault();
+  // bullet[current - 1].classList.add("active");
+  // progressCheck[current - 1].classList.add("active");
+  // progressText[current - 1].classList.add("active");
+  // current += 1;
+  container1.classList.add('display_none');
+  if (container_thanks.style.display === 'none' || container_thanks.style.display === '') {
+    // Show the div
+    container_thanks.style.display = 'block';
+  } else {
+    // Hide the div
+    container_thanks.style.display = 'none';
+  }
 });
 
 prevBtnSec.addEventListener("click", function(event){
