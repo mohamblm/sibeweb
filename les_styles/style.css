@@ -338,6 +338,9 @@ header .contact_content  .contact_ .ltaht textarea{
     color: #fff;
     border-radius: 10px;
 }
+header .contact_content .select_bosoin{
+    color: #000000;
+}
 header .contact_content  .contact_ .ltaht {
     padding: 1em;
 }
