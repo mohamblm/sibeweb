@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style-contact/all.min.css">
+   <link rel="stylesheet" href="style-contact/style.css">
+   <link rel="shortcut icon" href="logos2.png">
+   <!-- link for scrol animation -->
+   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+   <title>sibeweb</title>
+</head>
+
+<body>
+   <div class="container">
+      <header>Remplir le formulaire</header>
+      <div class="progress-bar">
+         <div class="step">
+            <p>
+               Prenom
+            </p>
+            <div class="bullet">
+               <span>1</span>
+            </div>
+            <div class="check fas fa-check"></div>
+         </div>
+         <div class="step">
+            <p>
+               Contact
+            </p>
+            <div class="bullet">
+               <span>2</span>
+            </div>
+            <div class="check fas fa-check"></div>
+         </div>
+         <div class="step">
+            <p>
+               Besoin
+            </p>
+            <div class="bullet">
+               <span>3</span>
+            </div>
+            <div class="check fas fa-check"></div>
+         </div>
+         <div class="step">
+            <p>
+               Envoyer
+            </p>
+            <div class="bullet">
+               <span>4</span>
+            </div>
+            <div class="check fas fa-check"></div>
+         </div>
+      </div>
+      <!-- -------------------------------- -->
+      <div class="form-outer">
+         <form method="post" name="contact-form" action="../thank_page/index.html">
+            <div class="page slide-page">
+               <div class="title">
+                  informations de base:
+               </div>
+               <div class="field">
+                  <div class="label">
+                     Prenom
+                  </div>
+                  <input type="text" name="Prenom" placeholder="votre prenom">
+               </div>
+               <div class="field">
+                  <div class="label">
+                     nom
+                  </div>
+                  <input type="text" name="nom" placeholder="votre nom">
+               </div>
+               <div class="field">
+                  <button class="firstNext next">Suivant</button>
+               </div>
+            </div>
+            <!-- -------------------------- -->
+            <div class="page">
+               <div class="title">
+                  Informations de contact:
+               </div>
+               <div class="field">
+                  <div class="label">
+                     Adresse e-mail
+                  </div>
+                  <input type="email" name="Email" id="email" placeholder="votre email">
+               </div>
+               <div class="field">
+                  <div class="label">
+                     Numéro de téléphone
+                  </div>
+                  <input type="Number" id="Phone" name="Phone" placeholder="votre numéro">
+               </div>
+               <div class="field btns">
+                  <button class="prev-1 prev">précédent</button>
+                  <button class="next-1 next">Suivant</button>
+               </div>
+            </div>
+            <!-- -------------------------------- -->
+            <div class="page">
+               <div class="title">
+                  Votre Besoin:
+               </div>
+               <div class="field">
+                  <div class="label">
+                     Choisissez votre Besoin
+                  </div>
+                  <select name="Choix_client" id="choix" aria-placeholder="votre choix">
+                     <option value="créations de sites web">créations de sites web</option>
+                     <option value="Gestions de médias sociaux">Gestions de médias sociaux</option>
+                     <option value="Gestion des campagnes publicitaires">Gestion des campagnes publicitaires</option>
+                     <option value="Localisation">Localisation</option>
+                     <option value="Vendre des abonnés sur les réseaux sociaux">Vendre des abonnés sur les réseaux
+                        sociaux</option>
+                  </select>
+               </div>
+               <div class="field">
+                  <div class="label" for="text">
+                     Message
+                  </div>
+                  <textarea id="text" cols="50" rows="20" name="Message" placeholder="votre Message"></textarea>
+               </div>
+               <div class="field btns">
+                  <button class="prev-2 prev">précédent</button>
+                  <button class="next-2 next">Suivant</button>
+               </div>
+            </div>
+            <!-- ------------------------------- -->
+            <div class="page">
+               <div class="title" style="text-align: center;  margin-bottom: 2em;">
+                  Merci
+               </div>
+               <div class="content" style="margin-bottom: 1em;">
+                  <p>
+                     Merci pour votre confiance en nous. Nous vous contacterons dans les plus brefs délais.
+                  </p>
+               </div>
+               <div class="field btns">
+                  <button class="prev-3 prev">précédent</button>
+                  <button type="submit" class="submit">Envoyer</button>
+               </div>
+            </div>
+         </form>
+      </div>
+   </div>
+   <script src="script.js"></script>
+</body>
+
+</html>

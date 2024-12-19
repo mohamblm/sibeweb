@@ -1,0 +1,81 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+section .con_rev{
+    position: relative;
+    width: 60%;
+}
+section .con_rev .reviews{
+    /* min-height: 100vh; */
+    width: 100%;
+    background-color:var(--byad-fath);
+ }
+ .reviews h1{
+     text-align: center;
+     padding:2em 2em 1em 2em;
+     font-weight: 900;
+     font-size:xx-large;
+     letter-spacing: 1px;
+ }
+ section .reviews .card_reviews{
+     /* min-height: 80vh ; */
+     position: relative;
+     width: 48em;
+     
+     
+ }
+ section .con_rev .reviews .card_reviews .card{
+     background-color:#fff;
+     margin: 2em 4em;
+     /* overflow-x: hidden; */
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     border-radius: 5px;
+     box-shadow: 0 0 1em rgb(0, 0, 0,.2);
+ }
+ section .con_rev .reviews .card_reviews .card:hover{
+     transition: .5s;
+     transform: translateY(-10px);
+ }
+ section .con_rev .reviews .card_reviews .card .head{
+     display: flex;
+     justify-content: space-between;
+     padding: 1em;
+ }
+ section .con_rev .reviews .card_reviews .card .profile_img{
+     width: 3em;
+     height: 3em;
+ }
+ section .con_rev .reviews .card_reviews .card .profile_img img{
+     width: 100%;
+     height: 100%;
+     border-radius: 50%;
+ }
+ section .con_rev .reviews .card_reviews .card .stars{
+     display: flex;
+     justify-content: space-between;  
+ }
+ section .con_rev .reviews .card_reviews .card .head1{
+     display: flex;
+ }
+ section .con_rev .reviews .card_reviews .card .stars img{
+     width: 20px;
+     height: 20px;
+ }
+ section .con_rev .reviews .card_reviews .card .name_user{
+     display: flex;
+     flex-direction: column;
+     margin-left:10px ;
+     margin-top: 6px;
+ }
+ section .con_rev .reviews .card_reviews .card p{
+     text-align: center;
+     padding:1% 7%;
+ }
+ section .con_rev .reviews .card_reviews .card span{
+     color: black;
+     opacity: .6;
+     font-size: .9em;
+ }
