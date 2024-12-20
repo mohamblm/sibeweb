@@ -562,7 +562,7 @@ section .services .container .card h3{
 section .services .container .card:hover button{
  /* background-color: #fff; */
  transition: .5s;
- transform: translate(0px , -10px);
+ scale: 1.01;
 }
 /* that card has a problem in size that's why I use id for fix that's problem*/
 /* section .services .container #pro_card:hover button{
@@ -599,31 +599,31 @@ section .services .container .card:hover button{
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto auto auto;
     }
-    section .services .container button{
+    /* section .services .container button{
         margin-left: 36%;
-    }
+    } */
 }
 @media (max-width: 634px){
     section .services .container{
         grid-template-columns: 1fr ;
         grid-template-rows: auto ;
     }
-    section .services .container button{
+    /* section .services .container button{
         margin-left: 38%;
-    }
-    section .services .container .card:hover button{
+    } */
+    /* section .services .container .card:hover button{
         background-color: #fff;
         transition: .5s;
         transform: translate(0px , -6px);
-       }
-       section .services .container .card:hover p{
+       } */
+       /* section .services .container .card:hover p{
            transition: .5s;
            transform: translateY(-1em);
        }
        section .services .container .card:hover h3{
            transition: 1s;
            transform: translateY(-10px);
-       }
+       } */
 }
 @media (max-width: 424px){
     section .services .container button{
